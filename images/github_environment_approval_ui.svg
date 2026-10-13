@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <linearGradient id="uiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+    <filter id="modalShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+  </defs>
+
+  <rect width="1000" height="620" fill="url(#uiBg)" rx="12" />
+
+  <rect x="0" y="0" width="1000" height="50" fill="#161b22" rx="12" />
+  <rect x="0" y="40" width="1000" height="10" fill="#161b22" />
+  <circle cx="25" cy="25" r="6" fill="#f85149" />
+  <circle cx="45" cy="25" r="6" fill="#e3b341" />
+  <circle cx="65" cy="25" r="6" fill="#2ea043" />
+  <text x="500" y="31" fill="#c9d1d9" font-size="13" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" text-anchor="middle">github.com/organization/repo/actions/runs/1284910283</text>
+
+  <g transform="translate(40, 70)">
+    <text x="0" y="24" fill="#f0f6fc" font-size="20" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Multi-Environment CD Pipeline #42</text>
+    <rect x="360" y="6" width="130" height="24" fill="#9e6a03" fill-opacity="0.2" rx="12" stroke="#d29922" stroke-width="1" />
+    <text x="425" y="22" fill="#d29922" font-size="12" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" text-anchor="middle">Waiting for review</text>
+    
+    <text x="0" y="55" fill="#8b949e" font-size="13" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Commit feat: release v1.0.0 to prod pushed to main by admin</text>
+
+    <rect x="0" y="80" width="920" height="56" fill="#161b22" rx="8" stroke="#d29922" stroke-width="1.5" />
+    <circle cx="30" cy="108" r="12" fill="#d29922" />
+    <text x="30" y="113" fill="#0d1117" font-size="14" font-weight="bold" font-family="sans-serif" text-anchor="middle">!</text>
+    <text x="55" y="103" fill="#f0f6fc" font-size="14" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Waiting for review to deploy to production</text>
+    <text x="55" y="122" fill="#8b949e" font-size="12" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">1 environment waiting for review: production</text>
+    
+    <rect x="740" y="93" width="160" height="30" fill="#238636" rx="6" />
+    <text x="820" y="113" fill="#ffffff" font-size="13" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" text-anchor="middle">Review deployments</text>
+  </g>
+
+  <rect x="0" y="0" width="1000" height="620" fill="#000000" fill-opacity="0.55" rx="12" />
+
+  <g transform="translate(240, 160)" filter="url(#modalShadow)">
+    <rect width="520" height="380" fill="#161b22" rx="10" stroke="#30363d" stroke-width="1.5" />
+    
+    <rect width="520" height="50" fill="#21262d" rx="10" />
+    <rect y="40" width="520" height="10" fill="#21262d" />
+    <text x="24" y="32" fill="#f0f6fc" font-size="16" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Pending deployment review</text>
+    <text x="495" y="31" fill="#8b949e" font-size="16" font-family="sans-serif" text-anchor="middle">x</text>
+
+    <text x="24" y="80" fill="#8b949e" font-size="13" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Select environments to approve or reject for this run:</text>
+
+    <rect x="24" y="100" width="472" height="70" fill="#0d1117" rx="6" stroke="#30363d" stroke-width="1" />
+    <rect x="42" y="118" width="18" height="18" fill="#238636" rx="4" />
+    <polyline points="46,127 50,131 56,122" fill="none" stroke="#ffffff" stroke-width="2" />
+    
+    <text x="72" y="132" fill="#f0f6fc" font-size="15" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">production</text>
+    <text x="72" y="152" fill="#58a6ff" font-size="12" font-family="monospace">https://production.example.com</text>
+    <text x="360" y="132" fill="#8b949e" font-size="12" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Reviewers: @admin</text>
+
+    <text x="24" y="200" fill="#f0f6fc" font-size="13" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Leave a comment (optional)</text>
+    <rect x="24" y="215" width="472" height="70" fill="#0d1117" rx="6" stroke="#30363d" stroke-width="1" />
+    <text x="36" y="240" fill="#8b949e" font-size="13" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">All automated tests on develop passed. Approving for production release.</text>
+
+    <line x1="0" y1="310" x2="520" y2="310" stroke="#30363d" stroke-width="1" />
+
+    <rect x="24" y="326" width="90" height="34" fill="#21262d" rx="6" stroke="#30363d" stroke-width="1" />
+    <text x="69" y="348" fill="#f85149" font-size="13" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" text-anchor="middle">Reject</text>
+
+    <rect x="330" y="326" width="166" height="34" fill="#238636" rx="6" />
+    <text x="413" y="348" fill="#ffffff" font-size="13" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" text-anchor="middle">Approve and deploy</text>
+  </g>
+</svg>

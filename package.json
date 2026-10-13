@@ -1,0 +1,9 @@
+{
+  "name": "multi-env-app",
+  "version": "1.0.0",
+  "description": "Multi-environment demo application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

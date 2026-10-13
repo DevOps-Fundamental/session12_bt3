@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="stagGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="prodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="gateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <rect width="1000" height="600" fill="url(#bgGrad)" rx="16" />
+
+  <text x="500" y="45" fill="#f8fafc" font-size="22" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" text-anchor="middle">KIEN TRUC CI/CD DA MOI TRUONG VOI GITHUB ENVIRONMENTS</text>
+  <text x="500" y="75" fill="#94a3b8" font-size="14" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" text-anchor="middle">Tach biet Staging va Production ket hop Environment Protection Rules</text>
+
+  <rect x="50" y="110" width="410" height="440" fill="url(#cardGrad)" rx="12" filter="url(#shadow)" stroke="#38bdf8" stroke-width="1.5" />
+  <rect x="50" y="110" width="410" height="42" fill="#0284c7" rx="12" />
+  <rect x="50" y="140" width="410" height="12" fill="#0284c7" />
+  <text x="70" y="137" fill="#ffffff" font-size="16" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">1. Luong Staging (Nhanh develop)</text>
+
+  <rect x="80" y="180" width="350" height="65" fill="#0f172a" rx="8" stroke="#475569" stroke-width="1" />
+  <text x="100" y="208" fill="#38bdf8" font-size="14" font-weight="bold" font-family="monospace">git push origin develop</text>
+  <text x="100" y="230" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Su kien day ma nguon vao nhanh phat trien</text>
+
+  <line x1="255" y1="245" x2="255" y2="280" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" />
+  <polygon points="255,285 250,275 260,275" fill="#38bdf8" />
+
+  <rect x="80" y="285" width="350" height="85" fill="#0f172a" rx="8" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="100" y="313" fill="#f8fafc" font-size="15" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Job: deploy-staging</text>
+  <text x="100" y="335" fill="#38bdf8" font-size="13" font-family="monospace">environment: staging</text>
+  <text x="100" y="355" fill="#10b981" font-size="12" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Trang thai: Tu dong trien khai ngay lap tuc</text>
+
+  <line x1="255" y1="370" x2="255" y2="405" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" />
+  <polygon points="255,410 250,400 260,400" fill="#38bdf8" />
+
+  <rect x="80" y="410" width="350" height="110" fill="url(#stagGrad)" rx="8" />
+  <text x="100" y="440" fill="#ffffff" font-size="16" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Moi truong Staging</text>
+  <text x="100" y="465" fill="#e0f2fe" font-size="13" font-family="monospace">URL: https://staging.example.com</text>
+  <text x="100" y="490" fill="#e0f2fe" font-size="12" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Kiem thu tinh nang, tich hop he thong</text>
+  <text x="100" y="508" fill="#e0f2fe" font-size="12" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Khong yeu cau phe duyet thu cong</text>
+
+  <rect x="540" y="110" width="410" height="440" fill="url(#cardGrad)" rx="12" filter="url(#shadow)" stroke="#22c55e" stroke-width="1.5" />
+  <rect x="540" y="110" width="410" height="42" fill="#16a34a" rx="12" />
+  <rect x="540" y="140" width="410" height="12" fill="#16a34a" />
+  <text x="560" y="137" fill="#ffffff" font-size="16" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">2. Luong Production (Nhanh main)</text>
+
+  <rect x="570" y="175" width="350" height="55" fill="#0f172a" rx="8" stroke="#475569" stroke-width="1" />
+  <text x="590" y="200" fill="#4ade80" font-size="14" font-weight="bold" font-family="monospace">git push origin main</text>
+  <text x="590" y="218" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Phat hanh ban chinh thuc vao nhanh main</text>
+
+  <line x1="745" y1="230" x2="745" y2="255" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4" />
+  <polygon points="745,260 740,250 750,250" fill="#f59e0b" />
+
+  <rect x="570" y="260" width="350" height="70" fill="url(#gateGrad)" rx="8" stroke="#f97316" stroke-width="1.5" />
+  <text x="590" y="285" fill="#ffffff" font-size="14" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Environment Protection Rules</text>
+  <text x="590" y="305" fill="#ffedd5" font-size="12" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Required reviewers: Chi dinh nguoi phe duyet</text>
+  <text x="590" y="322" fill="#fed7aa" font-size="11" font-weight="bold" font-family="monospace">TRANG THAI: WAITING FOR REVIEW</text>
+
+  <line x1="745" y1="330" x2="745" y2="355" stroke="#22c55e" stroke-width="2" stroke-dasharray="4" />
+  <polygon points="745,360 740,350 750,350" fill="#22c55e" />
+
+  <rect x="570" y="360" width="350" height="65" fill="#0f172a" rx="8" stroke="#22c55e" stroke-width="1.5" />
+  <text x="590" y="385" fill="#f8fafc" font-size="14" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Job: deploy-prod (Sau khi phe duyet)</text>
+  <text x="590" y="405" fill="#22c55e" font-size="13" font-family="monospace">environment: production</text>
+
+  <line x1="745" y1="425" x2="745" y2="445" stroke="#22c55e" stroke-width="2" stroke-dasharray="4" />
+  <polygon points="745,450 740,440 750,440" fill="#22c55e" />
+
+  <rect x="570" y="450" width="350" height="85" fill="url(#prodGrad)" rx="8" />
+  <text x="590" y="475" fill="#ffffff" font-size="16" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Moi truong Production</text>
+  <text x="590" y="497" fill="#dcfce7" font-size="13" font-family="monospace">URL: https://production.example.com</text>
+  <text x="590" y="518" fill="#dcfce7" font-size="12" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">Moi truong chay thuc te, an toan tuyet doi</text>
+</svg>

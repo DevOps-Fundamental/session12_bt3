@@ -1,0 +1,55 @@
+name: Multi-Environment CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  deploy-staging:
+    name: Deploy to Staging
+    if: endsWith(github.ref, '/develop')
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+      url: https://staging.example.com
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Environment
+        run: |
+          echo "Target Environment: Staging"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit SHA: ${{ github.sha }}"
+
+      - name: Deploy to Staging Server
+        run: |
+          echo "Executing automated deployment to Staging"
+          echo "Health check verification passed"
+          echo "Deployment completed successfully to https://staging.example.com"
+
+  deploy-prod:
+    name: Deploy to Production
+    if: endsWith(github.ref, '/main')
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://production.example.com
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Environment
+        run: |
+          echo "Target Environment: Production"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit SHA: ${{ github.sha }}"
+
+      - name: Deploy to Production Server
+        run: |
+          echo "Executing approved deployment to Production"
+          echo "Running database migrations"
+          echo "Performing rolling zero-downtime update"
+          echo "Production deployment live at https://production.example.com"
